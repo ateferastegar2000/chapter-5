@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício extra 09</title>
+</head>
+<body>
+
+    <!-- Título do exercício -->
+    <h1>Exercício extra 09</h1>
+
+    <!-- Parágrafo para mostrar o resultado -->
+    <p id="resultado">
+        Soma dos números multiplicados por 2:
+    </p>
+
+    <script>
+
+        // Declaração das variáveis
+        var cont = 1;
+        var numero = 0;
+        var total = 0;
+
+        // Repetir o processo 5 vezes
+        for (cont = 1; cont <= 5; cont++) {
+
+            // Pedir um número ao usuário
+            numero = parseFloat(prompt('Digite o ' + cont + 'º número'));
+
+            // Multiplicar o número por 2 e acumular o resultado
+            total = total + (numero * 2);
+        }
+
+        // Mostrar a soma final no parágrafo
+        document.getElementById('resultado').innerHTML += total;
+
+    </script>
+
+</body>
+</html>
+
+
+ <!-- este exercício pede para digitar 5 números. Primeiro, usamos um ciclo for para repetir 5 vezes. Em cada repetição, o utilizador digita um número. Depois, multiplicamos cada número por 2 e adicionamos o resultado à variável total, que é uma variável acumuladora. No final, mostramos a soma de todos os números multiplicados por 2 na página HTML.»
+ -->

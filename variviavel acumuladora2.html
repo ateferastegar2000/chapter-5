@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variavel acumuladora2</title>
+</head>
+<body>
+    <h1>variavel acumuladora2</h1>
+    <p id="teste"> total de vendas foi: </p>
+
+    <script>
+
+
+
+
+
+        var cont =1;
+        var total = 0;
+        var venda=0;
+        var fim = 0
+
+        fim = parseInt(prompt('digite a quantidade de vendas',''));
+
+
+        // alert('digite 10 numeros aleatorios');
+
+        for (cont =1; cont <=fim; cont++){
+
+            venda = parseFloat(prompt('digite o valor da  '+ cont + 'a venda',''))
+            total = total + venda;
+        }
+
+        document.getElementById('teste').innerHTML += total;
+
+    </script>
+</body>
+</html>
+
+<!-- xplicação geral do programa
+Este programa serve para calcular o valor total das vendas. Primeiro, pergunta ao utilizador quantas vendas foram realizadas. Depois, pede o valor de cada venda, soma todos os valores e mostra o total no final.
+
+Explicação das partes do código
+1. Variáveis:
+
+cont = 1: serve para contar o número de vendas.
+
+total = 0: guarda a soma de todas as vendas.
+
+venda = 0: guarda o valor de cada venda.
+
+fim = 0: guarda a quantidade total de vendas.
+
+2. Prompt da quantidade de vendas:
+
+fim = parseInt(prompt(...))
+
+Pergunta ao utilizador quantas vendas foram realizadas e guarda essa quantidade na variável fim.
+
+3. Ciclo for:
+
+O ciclo repete-se de acordo com a quantidade de vendas indicada pelo utilizador.
+
+4. Prompt da venda:
+
+venda = parseFloat(prompt(...))
+
+Pede o valor de cada venda. Usamos parseFloat porque o valor pode ter números decimais.
+
+5. Variável acumuladora:
+
+total = total + venda
+
+Soma o valor de cada venda ao valor acumulado anteriormente.
+
+6. Mostrar o resultado:
+
+No final, o programa mostra o valor total de todas as vendas na página HTML.
+
+
+, este programa serve para calcular o total das vendas. Primeiro, pergunta quantas vendas foram realizadas. Depois, usamos um ciclo for para repetir o processo de acordo com a quantidade de vendas. Em cada repetição, o utilizador digita o valor de uma venda. Esse valor é guardado na variável venda e depois é adicionado à variável total. No final, mostramos o valor total das vendas na página. A variável total é uma acumuladora porque vai somando todos os valores das vendas.»
+
+Diferença do programa anterior: neste programa, o utilizador escolhe quantas vendas quer inserir, enquanto no anterior o programa pedia sempre 10 números. -->

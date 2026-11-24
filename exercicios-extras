@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício extra 10</title>
+</head>
+<body>
+
+    <!-- Título do exercício -->
+    <h1>Exercício extra 10</h1>
+
+    <!-- Parágrafo para mostrar o resultado -->
+    <p id="resultado">A soma dos salários: </p>
+
+    <script>
+
+        // Declaração das variáveis
+        var cont = 1;
+        var salario = 0;
+        var total = 0;
+
+        // Repetir o processo 12 vezes, uma para cada mês do ano
+        for (cont = 1; cont <= 12; cont++) {
+
+            // Pedir o salário de cada mês
+            salario = parseFloat(prompt('Digite o salário do ' + cont + 'º mês:'));
+
+            // Somar o salário ao total acumulado
+            total = total + salario;
+        }
+
+        // Mostrar o total dos salários com duas casas decimais
+        document.getElementById('resultado').innerHTML += total.toFixed(2);
+
+    </script>
+
+</body>
+</html>
+
+<!-- este programa serve para calcular o total dos salários 
+ recebidos durante um ano. Primeiro, criamos três variáveis: uma para contar os meses, outra para guardar o salário e outra para acumular o total. Depois, usamos o ciclo for para repetir 12 vezes, uma vez para cada mês do ano. Em cada repetição, o utilizador digita o salário daquele mês. Depois, adicionamos esse salário à variável total. No final, mostramos a soma de todos os salários com duas casas decimais usando toFixed(2) -->

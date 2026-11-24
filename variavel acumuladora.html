@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variavel acumuladora</title>
+</head>
+<body>
+    <h1>variavel acumuladora</h1>
+    <p id="teste"> a soma de todos os numero e: </p>
+
+    <script>
+
+        var cont =1;
+        var total = 0;
+        var numero=0;
+
+        alert('digite 10 numeros aleatorios');
+
+        for (cont =1; cont <=10; cont++){
+
+            numero = parseInt(prompt('digite o '+ cont + 'o numero',''))
+            total = total + numero;
+        }
+
+        document.getElementById('teste').innerHTML +=total;
+
+    </script>
+</body>
+</html>
+
+
+<!-- ## Explicação geral do programa
+
+Este programa serve para calcular a soma de 10 números. Primeiro, pede ao utilizador para digitar 10 números. Depois, soma todos os números e mostra o resultado final na página.
+
+## Explicação das partes do código
+
+1. Variáveis:
+
+- `cont = 1`: serve para contar os números.
+- `total = 0`: guarda a soma dos números.
+- `numero = 0`: guarda cada número digitado pelo utilizador.
+
+2. Alert:
+
+Mostra uma mensagem a pedir ao utilizador para digitar 10 números.
+
+3. For:
+
+É um ciclo que se repete 10 vezes para pedir os números.
+
+4. Prompt:
+
+Pede ao utilizador para digitar um número.
+
+5. ParseInt:
+
+Converte o valor digitado em número inteiro.
+
+6. Acumuladora:
+
+`total = total + numero`
+
+Esta parte soma cada número ao valor anterior. Por isso, a variável `total` é chamada de variável acumuladora.
+
+7. Mostrar o resultado:
+
+No final, o programa mostra a soma de todos os números na página HTML. -->
+
+<!-- este programa serve para somar 10 números. Primeiro, criamos três variáveis: uma para contar os números, outra para guardar cada número digitado e outra para guardar a soma total. Depois, usamos o ciclo for para repetir 10 vezes e pedir um número ao utilizador. Cada número digitado é adicionado à variável total. No final, mostramos o resultado na página. A variável total é uma variável acumuladora porque vai guardando e somando os valores anteriores com os novos valores -->
